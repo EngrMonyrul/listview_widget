@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled9/topics/listtileWidget.dart';
 import 'package:untitled9/topics/listviewwidget.dart';
 
 void main(){
@@ -10,18 +11,20 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Practice Series',
-      theme: buildThemeData(),
-      routes: routes(),
-      initialRoute: 'list',
+      //theme: buildThemeData(),
+      //routes: routes(),
+      //initialRoute: 'listtilewidget',
+      home: ExampleTwo(),
     );
   }
 
   Map<String, WidgetBuilder> routes() {
     return {
-      'list':(context)=>const AllExample(),
+      'listviewwidget':(context)=> AllExample(),
+      'listtilewidget':(context)=> ExampleTwo(),
     };
   }
 

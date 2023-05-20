@@ -3,8 +3,9 @@ import 'package:untitled9/topics/listdeepdive.dart';
 import 'package:untitled9/topics/listtileWidget.dart';
 import 'package:untitled9/topics/listviewbuilderwidget.dart';
 import 'package:untitled9/topics/listviewwidget.dart';
+import 'package:untitled9/topics/stackiwdgets.dart';
 
-void main(){
+void main() {
   runApp(const MyApp());
 }
 
@@ -16,24 +17,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Practice Series',
-      //theme: buildThemeData(),
-      //routes: routes(),
-      //initialRoute: 'listtilewidget',
-      home: listdeepdiveexample(),
-    );
-  }
-
-  Map<String, WidgetBuilder> routes() {
-    return {
-      'listviewwidget':(context)=> AllExample(),
-      'listtilewidget':(context)=> ExampleTwo(),
-    };
-  }
-
-  ThemeData buildThemeData() {
-    return ThemeData(
-      scaffoldBackgroundColor: Colors.white,
-      visualDensity: VisualDensity.adaptivePlatformDensity,
+      home: ExampleFour(),
     );
   }
 }
